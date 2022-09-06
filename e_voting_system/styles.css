@@ -1,0 +1,28 @@
+body{
+    margin:200px;
+    padding: 100px;
+    background: url(print.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+}
+.candidatewindow{
+    width:320px;
+    height: 420px;
+    color:red;
+    top: 50px;
+    left:50%;
+    position:0;
+    transform: translate(-50% ,-50%);
+    box-sizing: border-box;
+    padding-top: 0%;
+}
+.icon{
+    width:500px;
+    height: 300px;
+    position: absolute;
+    top:50px;
+    left:calc(50% -50px);
+    padding-left: 0;
+
+}
