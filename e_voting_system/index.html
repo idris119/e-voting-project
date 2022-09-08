@@ -5,33 +5,61 @@
         <link  rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div class="nav-wraper1">
+            <h1>voter window</h1>
+            </div>
         <div class="container">
-            <div class="nav-wraper">
-                <div class="left-side">
-                    <div>candidate window</div>
+                <div class="voterswindow"></div>
+                 <div class="box1">
+                    <form>
+                    <img class ="image" src = "icon.jpg">
+                    <h2>michael ndung'u</h2>
+                    <p>id:36468864</p>
+                    <p>governor</p>
+                    <input type="radio" name="candidate1" value="kevin"  checked="checked">candidate1
+                    
+                    </div>
+                <div class="box2">
+                    <img class ="image" src = "icon.jpg">
+                        <h2>michael ndung'u</h2>
+                        <p>id:36468864</p>
+                        <p>senator</p>
+                        <input type="radio" name="candidate1" value="andrew" checked="checked">candidate2
+                        </form>
+                       
+                    </div>
+                  
                 </div>
 
-             <div class="right-side">
-                <div>results</div>
-                </div>
-            </div>
-            <div class="content-wrapper">
-                <div class="icon-wrappers">
-                    <div class="icon-wrap">
-                        <div class="logo-wrapper">
-                            <img src="icon.jpg"alt="">
+                <div class="divform">
+                    <input type="submit" value="vote" id="submitId" class="submit__btn" onclick=openpopup()>
+                    <div class="popup" id="popup">
+                        <h2>thank you</h2>
+                        <p>you have successfully voted !!</p>
+                        <button type="button"onclick="closepopup()">OK</button>
                     </div>
-                <div class="icon-wrap">
-                    <div class="logo-wrapper">
-                        <img src="icon.jpg"alt="">
-                 </div>
-                <div class="icon-wrap">
-                    <div class="logo-wrapper">
-                        <img src="icon.jpg"alt="">
-                       </div>
+                </div>
+            </div> 
+        <div class="nav-wraper2">
+            <h1>results</h1>
+            </div>
+            <div class="results">
+                <div class="classCount">
+                     <div class="form-group">
+                        <label for="votes-casted">casted-votes</label>
+                        <input type="text" name="candidate1" value="0">
+                        <label for="votes-casted">valid-votes</label>
+                        <input type="text" name="candidate2" value="0">
+                     </div>
+                     <div class="totalVotes">
+                        <input type="text" value="total-votes"readonly>
+                        <input type="text" value="0" class="total-votes"readonly>
+                     </div>
+
                 </div>
             </div>
+
         </div>
-    </body>
+        </div>
     <script src ="index.js"></script>
 </html>

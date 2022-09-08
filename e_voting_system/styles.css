@@ -1,59 +1,119 @@
-body{
+.body{
+    margin:0;
+    padding:0;
     background: url(print.jpg);
     background-size:cover;
-    margin: 0px;
-    
+
 }
+.box1{
+    margin-left:50px;
+    width: max-content;
+    padding: 0;
+
+}
+.box2{
+    border: 50% ,50%;
+    margin-left:50px;
+    width: max-content;
+    height: fit-content;
+
+}
+
+
 .container{
-    display: grid;
-    grid-template-columns:  1fr;
-    justify-content: space-between;
+    border:auto;
+    display: flex;
+    margin-top:-50px;
+    margin:0;
+    padding:10px;
+
+
 }
-.nav-wraper{
+.voterswindow, .resultwindow:hover{
+    justify-content: space-evenly;
+    display: flex;
+
+}
+.image{
+    width: 300px;
+    height:200px;
+}
+.nav-wraper1{
+    margin-right: 20px;
+    text-transform: uppercase;
     display:flex;
+    padding:10px;
     justify-content: space-between;
-    padding: 38px;
-    height: 22px;
-    border-bottom: 1px solid;
+    margin-top:-40px;
 }
-.nav-wraper >.left-side >div{
+.nav-wraper2{
     margin-right: 20px;
-    font-size: 0.9em;
     text-transform: uppercase;
-    font-weight: 700;
-    color:cyan
+    display:flex;
+    padding:10px;
+    justify-content: space-between;
+    margin-top:-150px;
+   
 }
-
-.nav-wraper >.right-side >div{
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color:cyan
-}
-.left-side:hover{
+.nav-wraper1:hover{
     border-bottom: 3px solid red;
 }
-.right-side:hover{
+.nav-wraper2:hover{
     border-bottom: 3px solid red;
 }
-/*icon styles*/
-.icon-wrappers{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.submit__btn{
+    justify-content:center;
+    width: 5em;
+    height: 3em;
+    border: 2px solid cyan;
+    box-sizing:content-box;
+    padding: 0px 50px;
+    cursor: pointer;
+    font-style: bold;
+    border-radius: 30px;
+    text-align: center;
+    outline:none;
+    margin-right :50px;
+    margin-top: 50% 50%;
+}
+.divform{
+    justify-content: space-evenly;
+}
+.popup{
+    width: 400px;
+    background: blueviolet;
+    border-radius: 6px;
+    position:space-between;
+    top:100%;
+    left:50%;
+    right:50%;
+    transform:translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0px 20px 20px;
+    visibility: hidden;
+    transition:transform 0.4s, top 0.4s;
+    margin-right: 50%;
+    text-transform: uppercase;
 
 }
-.icon-wrap{
-    position:relative;
+.openpopup{
+    visibility: visible;
+    top:100%;
+    transform:translate(50%,-370%)scale(1);
+    margin-bottom: -300%;
+    justify-content: space-evenly;
+}
+.popup h2{
+    font-size:38px;
+    font-weight: 500;
+    margin:30px 0 10px;
+}
+.popup button{
+    width: 30%;
+    margin-bottom: -100px;
+    justify-content: space-between;
+    outline:none;
+    border-radius: 4px;
+    box-shadow:0 5px 5px rgb(0,0,0,0.2);
 
-}
-.logo-wrapper img{
-width:320px;
-margin-bottom:20px;
-align-items:center;
-height: 340px;
-}
-.img-darken{
-    transition:1s;
-    filter:brightness(10%);
 }
